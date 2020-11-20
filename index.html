@@ -4,10 +4,346 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-    <p>HOLA MUNDO</p>
-    <p>CRUEL</p>
-    <img src="img/ac-c.png" alt="">
+    <div class="contenedor-principal">
+      
+        <h1 class="titulo">CONTENEDOR FLEXIBLE</h1>
+        <div class="card">
+            <h3 class="titulo">PROPIEDAD</h3>
+            <p>La propiedad <strong>display</strong> con valor <strong>flex</strong> o <strong>inline-flex</strong> nos permite establecer un 
+                <strong>contenedor flexible</strong>. Los hijos del contenedor flexible se llaman <strong>elementos flexibles.</strong></p>
+            <h3 class="titulo">RESUMEN</h3>
+            <div class="resumen">
+                <div class="html">
+                    <pre>&lt;div class="contenedor"&gt;<br>   &lt;div&gt;E1&lt;/div&gt;<br>   &lt;div&gt;E2&lt;/div&gt;<br>&lt;/div&gt;</pre>
+                </div>
+                <div class="css">
+                    <pre>.contenedor{<br>   display: flex;<br>}</pre>
+                </div>
+                <div class="img">
+                    <img src="img/d-f.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <h1 class="titulo">ESTABLECER LA DIRECCION DEL EJE PRINCIPAL DEL CONTENEDOR FLEXIBLE</h1>
+        <div class="card">
+            <h3 class="titulo">PROPIEDAD</h3>
+            <p>La propiedad <strong>flex-direction</strong> permite establecer la direccion del eje principal del contenedor flexible.</p>
+            <h3 class="titulo">RESUMEN</h3>
+            <div class="resumen">
+                <div class="html">
+                    <pre>&lt;div class="contenedor"&gt;<br>   &lt;div&gt;E1&lt;/div&gt;<br>   &lt;div&gt;E2&lt;/div&gt;<br>   &lt;div&gt;E3&lt;/div&gt;<br>&lt;/div&gt;</pre>
+                </div>
+                <div class="css">
+                    <pre>.contenedor{<br>   display: flex;<br><strong class="importante">   flex-direction: row;</strong> [VALOR POR DEFECTO]<br>}</pre>
+                </div>
+                <div class="img">
+                    <img src="img/fd-r.png" alt="">
+                </div>
+            </div>
+            <hr>
+            <div class="resumen">
+                <div class="html">
+                    <pre>&lt;div class="contenedor"&gt;<br>   &lt;div&gt;E1&lt;/div&gt;<br>   &lt;div&gt;E2&lt;/div&gt;<br>   &lt;div&gt;E3&lt;/div&gt;<br>&lt;/div&gt;</pre>
+                </div>
+                <div class="css">
+                    <pre>.contenedor{<br>   display: flex;<br><strong class="importante">   flex-direction: row-reverse;</strong><br>}</pre>
+                </div>
+                <div class="img">
+                    <img src="img/fd-rr.png" alt="">
+                </div>
+            </div>
+            <hr>
+            <div class="resumen">
+                <div class="html">
+                    <pre>&lt;div class="contenedor"&gt;<br>   &lt;div&gt;E1&lt;/div&gt;<br>   &lt;div&gt;E2&lt;/div&gt;<br>   &lt;div&gt;E3&lt;/div&gt;<br>&lt;/div&gt;</pre>
+                </div>
+                <div class="css">
+                    <pre>.contenedor{<br>   display: flex;<br><strong class="importante">   flex-direction: column;</strong><br>}</pre>
+                </div>
+                <div class="img">
+                    <img src="img/fd-c.png" alt="">
+                </div>
+            </div>
+            <hr>
+            <div class="resumen">
+                <div class="html">
+                    <pre>&lt;div class="contenedor"&gt;<br>   &lt;div&gt;E1&lt;/div&gt;<br>   &lt;div&gt;E2&lt;/div&gt;<br>   &lt;div&gt;E3&lt;/div&gt;<br>&lt;/div&gt;</pre>
+                </div>
+                <div class="css">
+                    <pre>.contenedor{<br>   display: flex;<br><strong class="importante">   flex-direction: column-reverse;</strong><br>}</pre>
+                </div>
+                <div class="img">
+                    <img src="img/fd-cr.png" alt="">
+                </div>
+            </div>
+        </div>
+        
+        <h1 class="titulo">CONFIGURAR EL CONTENEDOR FLEXIBLE PARA QUE SEA MULTI LINEA O DE UNA SOLA LINEA, Y ESTABLECER LA DIRECCION DE SU EJE SECUNDARIO</h1>
+        <div class="card">
+            <h3 class="titulo">PROPIEDAD</h3>
+            <p>La propiedad <strong>flex-wrap</strong> controla si el contenedor flexible es de una sola linea o de varias lineas y la direccion del eje secundario, que
+            determina la direccion en la que se alinean las nuevas lineas.</p>
+            <h3 class="titulo">RESUMEN</h3>
+            <div class="resumen">
+                <div class="html">
+                    <pre>&lt;div class="contenedor"&gt;<br>   &lt;div&gt;E1&lt;/div&gt;<br>   &lt;div&gt;E2&lt;/div&gt;<br>   &lt;div&gt;E3&lt;/div&gt;<br>&lt;/div&gt;</pre>
+                </div>
+                <div class="css">
+                    <pre>.contenedor{<br>   display: flex;<br>   flex-direction: row;<br><strong class="importante">  flex-wrap: nowrap;</strong> [VALOR POR DEFECTO]<br>}</pre>
+                </div>
+                <div class="img">
+                    <img src="img/fw-nw.png" alt="">
+                </div>
+            </div>
+            <hr>
+            <div class="resumen">
+                <div class="html">
+                    <pre>&lt;div class="contenedor"&gt;<br>   &lt;div&gt;E1&lt;/div&gt;<br>   &lt;div&gt;E2&lt;/div&gt;<br>   &lt;div&gt;E3&lt;/div&gt;<br>&lt;/div&gt;</pre>
+                </div>
+                <div class="css">
+                    <pre>.contenedor{<br>   display: flex;<br>   flex-direction: row;<br><strong class="importante">  flex-wrap: wrap;</strong><br>}</pre>
+                </div>
+                <div class="img">
+                    <img src="img/fw-w.png" alt="">
+                </div>
+            </div>
+            <hr>
+            <div class="resumen">
+                <div class="html">
+                    <pre>&lt;div class="contenedor"&gt;<br>   &lt;div&gt;E1&lt;/div&gt;<br>   &lt;div&gt;E2&lt;/div&gt;<br>   &lt;div&gt;E3&lt;/div&gt;<br>&lt;/div&gt;</pre>
+                </div>
+                <div class="css">
+                    <pre>.contenedor{<br>   display: flex;<br>   flex-direction: row;<br><strong class="importante">  flex-wrap: wrap-reverse;</strong><br>}</pre>
+                </div>
+                <div class="img">
+                    <img src="img/fw-wr.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <h1 class="titulo">ALINEAR LINEAS DEL CONTENEDOR FLEXIBLE</h1>
+        <div class="card">
+            <h3 class="titulo">PROPIEDAD</h3>
+            <p>La propiedad <strong class="importante">align-content</strong> alinea las lineas de un contenedor flexible cuando hay espacio adicional en el eje secundario. 
+            Tenga en cuenta que esta propiedad no tiene efecto en un contenedor flexible de una sola linea.</p>
+            <h3 class="titulo">RESUMEN</h3>
+            <div class="resumen">
+                <div class="html">
+                    <pre>&lt;div class="contenedor"&gt;<br>   &lt;div&gt;E1&lt;/div&gt;<br>   &lt;div&gt;E2&lt;/div&gt;<br>   &lt;div&gt;E3&lt;/div&gt;<br>   &lt;div&gt;E4&lt;/div&gt;<br>   &lt;div&gt;E5&lt;/div&gt;<br>&lt;/div&gt;</pre>
+                </div>
+                <div class="css">
+                    <pre>.contenedor{<br>   display: flex;<br>   flex-direction: row;<br>   flex-wrap: wrap;<br><strong class="importante">   align-content: flex-start;</strong><br>}</pre>
+                </div>
+                <div class="img">
+                    <img src="img/ac-fs.png" alt="">
+                </div>
+            </div>
+            <hr>
+            <div class="resumen">
+                <div class="html">
+                    <pre>&lt;div class="contenedor"&gt;<br>   &lt;div&gt;E1&lt;/div&gt;<br>   &lt;div&gt;E2&lt;/div&gt;<br>   &lt;div&gt;E3&lt;/div&gt;<br>   &lt;div&gt;E4&lt;/div&gt;<br>   &lt;div&gt;E5&lt;/div&gt;<br>&lt;/div&gt;</pre>
+                </div>
+                <div class="css">
+                    <pre>.contenedor{<br>   display: flex;<br>   flex-direction: row;<br>   flex-wrap: wrap;<br><strong class="importante">   align-content: flex-end;</strong><br>}</pre>
+                </div>
+                <div class="img">
+                    <img src="img/ac-fe.png" alt="">
+                </div>
+            </div>
+            <hr>
+            <div class="resumen">
+                <div class="html">
+                    <pre>&lt;div class="contenedor"&gt;<br>   &lt;div&gt;E1&lt;/div&gt;<br>   &lt;div&gt;E2&lt;/div&gt;<br>   &lt;div&gt;E3&lt;/div&gt;<br>   &lt;div&gt;E4&lt;/div&gt;<br>   &lt;div&gt;E5&lt;/div&gt;<br>&lt;/div&gt;</pre>
+                </div>
+                <div class="css">
+                    <pre>.contenedor{<br>   display: flex;<br>   flex-direction: row;<br>   flex-wrap: wrap;<br><strong class="importante">   align-content: space-between;</strong><br>}</pre>
+                </div>
+                <div class="img">
+                    <img src="img/ac-sb.png" alt="">
+                </div>
+            </div>
+            <hr>
+            <div class="resumen">
+                <div class="html">
+                    <pre>&lt;div class="contenedor"&gt;<br>   &lt;div&gt;E1&lt;/div&gt;<br>   &lt;div&gt;E2&lt;/div&gt;<br>   &lt;div&gt;E3&lt;/div&gt;<br>   &lt;div&gt;E4&lt;/div&gt;<br>   &lt;div&gt;E5&lt;/div&gt;<br>&lt;/div&gt;</pre>
+                </div>
+                <div class="css">
+                    <pre>.contenedor{<br>   display: flex;<br>   flex-direction: row;<br>   flex-wrap: wrap;<br><strong class="importante">   align-content: center;</strong><br>}</pre>
+                </div>
+                <div class="img">
+                    <img src="img/ac-c.png" alt="">
+                </div>
+            </div>
+            <hr>
+            <div class="resumen">
+                <div class="html">
+                    <pre>&lt;div class="contenedor"&gt;<br>   &lt;div&gt;E1&lt;/div&gt;<br>   &lt;div&gt;E2&lt;/div&gt;<br>   &lt;div&gt;E3&lt;/div&gt;<br>   &lt;div&gt;E4&lt;/div&gt;<br>   &lt;div&gt;E5&lt;/div&gt;<br>&lt;/div&gt;</pre>
+                </div>
+                <div class="css">
+                    <pre>.contenedor{<br>   display: flex;<br>   flex-direction: row;<br>   flex-wrap: wrap;<br><strong class="importante">   align-content: space-around;</strong><br>}</pre>
+                </div>
+                <div class="img">
+                    <img src="img/ac-sa.png" alt="">
+                </div>
+            </div>
+            <hr>
+            <div class="resumen">
+                <div class="html">
+                    <pre>&lt;div class="contenedor"&gt;<br>   &lt;div&gt;E1&lt;/div&gt;<br>   &lt;div&gt;E2&lt;/div&gt;<br>   &lt;div&gt;E3&lt;/div&gt;<br>   &lt;div&gt;E4&lt;/div&gt;<br>   &lt;div&gt;E5&lt;/div&gt;<br>&lt;/div&gt;</pre>
+                </div>
+                <div class="css">
+                    <pre>.contenedor{<br>   display: flex;<br>   flex-direction: row;<br>   flex-wrap: wrap;<br><strong class="importante">   align-content: stretch;</strong><br>}</pre>
+                </div>
+                <div class="img">
+                    <img src="img/ac-s.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <h1 class="titulo">ALINEAR ELEMENTOS FLEXIBLES A LO LARGO DEL EJE PRINCIPAL</h1>
+        <div class="card">
+            <h3>PROPIEDAD</h3>
+            <p>La propiedad <strong class="importante">justify-content</strong> alinea los elementos flexibles a lo largo del eje principal.</p>
+            <h3 class="titulo">RESUMEN</h3>
+            <div class="resumen">
+                <div class="html">
+                    <pre>&lt;div class="contenedor"&gt;<br>   &lt;div&gt;E1&lt;/div&gt;<br>   &lt;div&gt;E2&lt;/div&gt;<br>   &lt;div&gt;E3&lt;/div&gt;<br>   &lt;div&gt;E4&lt;/div&gt;<br>   &lt;div&gt;E5&lt;/div&gt;<br>&lt;/div&gt;</pre>
+                </div>
+                <div class="css">
+                    <pre>.contenedor{<br>   display: flex;<br>   flex-direction: row;<br>   flex-wrap: wrap;<br><strong class="importante">   align-content: flex-start;</strong><br>}</pre>
+                </div>
+                <div class="img">
+                    <img src="img/jc-fs.png" alt="">
+                </div>
+            </div>
+            <hr>
+            <div class="resumen">
+                <div class="html">
+                    <pre>&lt;div class="contenedor"&gt;<br>   &lt;div&gt;E1&lt;/div&gt;<br>   &lt;div&gt;E2&lt;/div&gt;<br>   &lt;div&gt;E3&lt;/div&gt;<br>   &lt;div&gt;E4&lt;/div&gt;<br>   &lt;div&gt;E5&lt;/div&gt;<br>&lt;/div&gt;</pre>
+                </div>
+                <div class="css">
+                    <pre>.contenedor{<br>   display: flex;<br>   flex-direction: row;<br>   flex-wrap: wrap;<br><strong class="importante">   align-content: flex-start;</strong><br>}</pre>
+                </div>
+                <div class="img">
+                    <img src="img/jc-fe.png" alt="">
+                </div>
+            </div>
+            <hr>
+            <div class="resumen">
+                <div class="html">
+                    <pre>&lt;div class="contenedor"&gt;<br>   &lt;div&gt;E1&lt;/div&gt;<br>   &lt;div&gt;E2&lt;/div&gt;<br>   &lt;div&gt;E3&lt;/div&gt;<br>   &lt;div&gt;E4&lt;/div&gt;<br>   &lt;div&gt;E5&lt;/div&gt;<br>&lt;/div&gt;</pre>
+                </div>
+                <div class="css">
+                    <pre>.contenedor{<br>   display: flex;<br>   flex-direction: row;<br>   flex-wrap: wrap;<br><strong class="importante">   align-content: flex-start;</strong><br>}</pre>
+                </div>
+                <div class="img">
+                    <img src="img/jc-c.png" alt="">
+                </div>
+            </div>
+            <hr>
+            <div class="resumen">
+                <div class="html">
+                    <pre>&lt;div class="contenedor"&gt;<br>   &lt;div&gt;E1&lt;/div&gt;<br>   &lt;div&gt;E2&lt;/div&gt;<br>   &lt;div&gt;E3&lt;/div&gt;<br>   &lt;div&gt;E4&lt;/div&gt;<br>   &lt;div&gt;E5&lt;/div&gt;<br>&lt;/div&gt;</pre>
+                </div>
+                <div class="css">
+                    <pre>.contenedor{<br>   display: flex;<br>   flex-direction: row;<br>   flex-wrap: wrap;<br><strong class="importante">   align-content: flex-start;</strong><br>}</pre>
+                </div>
+                <div class="img">
+                    <img src="img/jc-sb.png" alt="">
+                </div>
+            </div>
+            <hr>
+            <div class="resumen">
+                <div class="html">
+                    <pre>&lt;div class="contenedor"&gt;<br>   &lt;div&gt;E1&lt;/div&gt;<br>   &lt;div&gt;E2&lt;/div&gt;<br>   &lt;div&gt;E3&lt;/div&gt;<br>   &lt;div&gt;E4&lt;/div&gt;<br>   &lt;div&gt;E5&lt;/div&gt;<br>&lt;/div&gt;</pre>
+                </div>
+                <div class="css">
+                    <pre>.contenedor{<br>   display: flex;<br>   flex-direction: row;<br>   flex-wrap: wrap;<br><strong class="importante">   align-content: flex-start;</strong><br>}</pre>
+                </div>
+                <div class="img">
+                    <img src="img/jc-sa.png" alt="">
+                </div>
+            </div>
+        </div>
+
+
+
+        <h1 class="titulo">ALINEAR ELEMENTOS FLEXIBLES A LO LARGO DEL EJE SECUNDARIO</h1>        
+        <div class="card">
+            <h3 class="titulo">PROPIEDAD</h3>
+            <p>La propiedad <strong>align-items</strong> alinea los elementos flexibles a lo largo del eje secundario, en cada linea del contenedor flexible.</p>
+            <h3 class="titulo">RESUMEN</h3>
+            <div class="resumen">
+                <div class="html">
+                    <pre>&lt;div class="contenedor"&gt;<br>   &lt;div&gt;E1&lt;/div&gt;<br>   &lt;div&gt;E2&lt;/div&gt;<br>   &lt;div&gt;E3&lt;/div&gt;<br>&lt;/div&gt;</pre>
+                </div>
+                <div class="css">
+                    <pre>.contenedor{<br>   display: flex;<br><strong>   align-items: center;</strong><br>}</pre>
+                </div>
+                <div class="img">
+                    <img src="img/ai-fs.png" alt="">
+                </div>
+            </div>
+            <hr>
+            <div class="resumen">
+                <div class="html">
+                    <pre>&lt;div class="contenedor"&gt;<br>   &lt;div&gt;E1&lt;/div&gt;<br>   &lt;div&gt;E2&lt;/div&gt;<br>   &lt;div&gt;E3&lt;/div&gt;<br>&lt;/div&gt;</pre>
+                </div>
+                <div class="css">
+                    <pre>.contenedor{<br>   display: flex;<br><strong>   align-items: center;</strong><br>}</pre>
+                </div>
+                <div class="img">
+                    <img src="img/ai-fe.png" alt="">
+                </div>
+            </div>
+            <hr>
+            <div class="resumen">
+                <div class="html">
+                    <pre>&lt;div class="contenedor"&gt;<br>   &lt;div&gt;E1&lt;/div&gt;<br>   &lt;div&gt;E2&lt;/div&gt;<br>   &lt;div&gt;E3&lt;/div&gt;<br>&lt;/div&gt;</pre>
+                </div>
+                <div class="css">
+                    <pre>.contenedor{<br>   display: flex;<br><strong>   align-items: center;</strong><br>}</pre>
+                </div>
+                <div class="img">
+                    <img src="img/ai-c.png" alt="">
+                </div>
+            </div>
+            <hr>
+            <div class="resumen">
+                <div class="html">
+                    <pre>&lt;div class="contenedor"&gt;<br>   &lt;div&gt;E1&lt;/div&gt;<br>   &lt;div&gt;E2&lt;/div&gt;<br>   &lt;div&gt;E3&lt;/div&gt;<br>&lt;/div&gt;</pre>
+                </div>
+                <div class="css">
+                    <pre>.contenedor{<br>   display: flex;<br><strong>   align-items: center;</strong><br>}</pre>
+                </div>
+                <div class="img">
+                    <img src="img/ai-s.png" alt="">
+                </div>
+            </div>
+
+
+            <h3 class="titulo">EJEMPLO</h3>
+            <div class="flex-container container-background-color fc-5">
+                <div class="flex-item background-color-1 item-height-50 item-width-140">E1</div>
+                <div class="flex-item background-color-2 item-height-60 item-width-140">E2</div>
+                <div class="flex-item background-color-3 item-height-70 item-width-140">E3</div>
+                <div class="flex-item background-color-4 item-height-50 item-width-140">E4</div>
+                <div class="flex-item background-color-5 item-height-90 item-width-140">E5</div>
+                <div class="flex-item background-color-6 item-height-70 item-width-140">E6</div>
+                <div class="flex-item background-color-7 item-height-80 item-width-140">E7</div>
+                <div class="flex-item background-color-8 item-height-100 item-width-140">E8</div>                
+                <div class="flex-item background-color-9 item-height-100 item-width-140">E8</div>                
+                <div class="flex-item background-color-10 item-height-70 item-width-140">E8</div>                
+                <div class="flex-item background-color-11 item-height-60 item-width-140">E8</div>                
+                <div class="flex-item background-color-12 item-height-90 item-width-140">E8</div>                
+            </div>
+        </div>
+       
+    </div>
 </body>
 </html>

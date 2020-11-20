@@ -1,0 +1,94 @@
+/**************************************************************************************************************/
+/* GENERAL */
+body{
+    font-family: 'Roboto';
+}
+.contenedor-principal{
+    padding-left: 150px;
+    padding-right: 150px;
+}
+.card {
+    background-color: white;
+    padding: 15px 25px 25px 25px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 2px solid #ecf0f5;
+}
+
+.titulo{
+    color: rgb(238, 110, 115);
+}
+.importante{
+    color: #c1392b;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+/**************************************************************************************************************/
+/* COLORES DE FONDO */
+.background-color-1 {background-color: #2a80b9; color: white;}
+.background-color-2 {background-color: #8f44ad; color: white;}
+.background-color-3 {background-color: #16a086; color: white;}
+.background-color-4 {background-color: #f1c40f; color: white;}
+.background-color-5 {background-color: #e77e23; color: white;}
+.background-color-6 {background-color: #c1392b; color: white;}
+.background-color-7 {background-color: #34495e; color: white;}
+.background-color-8 {background-color: #d55401; color: white;}
+.background-color-9 {background-color: #2fcc71; color: white;}
+.background-color-10{background-color: #e84c3d; color: white;}
+.background-color-11{background-color: #3598dc; color: white;}
+.background-color-12{background-color: #8f44ad; color: white;}
+.background-color-13{background-color: #16a086; color: white;}
+.background-color-14{background-color: #f1c40f; color: white;}
+.background-color-15{background-color: #e77e23; color: white;}
+/**************************************************************************************************************/
+/* ALTURA DE LOS ELEMENTOS FLEXIBLES */
+.item-height-50{padding-top: 25px;  padding-bottom: 25px;}
+.item-height-60{padding-top: 30px; padding-bottom: 30px;}
+.item-height-70{padding-top: 35px; padding-bottom: 35px;}
+.item-height-80{padding-top: 40px; padding-bottom: 40px;}
+.item-height-90{padding-top: 45px; padding-bottom: 45px;}
+.item-height-100{padding-top: 50px; padding-bottom: 50px;}
+/*************************************************************************************************************/
+/* ANCHO DE LOS ELEMENTOS FLEXIBLES */
+.item-width-50{padding-left: 25px;  padding-right: 25px;}
+.item-width-60{padding-left: 30px; padding-right: 30px;}
+.item-width-70{padding-left: 35px; padding-right: 35px;}
+.item-width-80{padding-left: 40px; padding-right: 40px;}
+.item-width-90{padding-left: 45px; padding-right: 45px;}
+.item-width-100{padding-left: 50px; padding-right: 50px;}
+.item-width-110{padding-left: 55px; padding-right: 55px;}
+.item-width-120{padding-left: 60px; padding-right: 60px;}
+.item-width-130{padding-left: 65px; padding-right: 65px;}
+.item-width-140{padding-left: 70px; padding-right: 70px;}
+.item-width-150{padding-left: 75px; padding-right: 75px;}
+/*************************************************************************************************************/
+/* ALTURA DEL CONTENEDOR */
+.container-height-350{height: 350px;}
+.container-height-400{height: 400px;}
+.container-height-450{height: 450px;}
+.container-height-500{height: 500px;}
+/*************************************************************************************************************/
+/* CONTENEDOR */
+.container-background-color{
+    background-color: rgba(0,0,0,0.2);
+}
+/*************************************************************************************************************/
+/* RESUMEN */
+.resumen{
+    display: flex;
+    flex-wrap: wrap;
+}
+.html, .css, .img{
+    flex: 1;
+}
+
+/*************************************************************************************************************/
+/*************************************************************************************************************/
+.fc-5{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
