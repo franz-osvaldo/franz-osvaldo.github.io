@@ -26,6 +26,11 @@ body{
 }.nota{
     line-height: 1.6;
 }
+.definicion{
+    font-weight: bold;
+    font-style: italic;
+    color: #c1392b;
+}
 /**************************************************************************************************************/
 /* COLORES DE FONDO */
 .background-color-1 {background-color: #2a80b9; color: white;}

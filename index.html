@@ -2,14 +2,59 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no " >
+    <title>CAPACITACION - UCB</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
 </head>
 <body>
-    <div class="contenedor-principal">
-      
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">UCB</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">                
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    HTML 5
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Accion 1</a>
+                    <a class="dropdown-item" href="#">Accion 2</a>                    
+                    <a class="dropdown-item" href="#">Accion 3</a>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      CSS 3
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Accion 1</a>
+                        <a class="dropdown-item" href="#">Accion 2</a>                    
+                        <a class="dropdown-item" href="#">Accion 3</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      JavaScript
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Accion 1</a>
+                        <a class="dropdown-item" href="#">Accion 2</a>                    
+                        <a class="dropdown-item" href="#">Accion 3</a>
+                    </div>
+                </li>
+                
+                
+              </ul>              
+            </div>
+        </nav>
+
+
         <h1 class="titulo">CONTENEDOR FLEXIBLE</h1>
         <p>La propiedad <strong class="importante">display</strong> con valor <strong>flex</strong> o <strong>inline-flex</strong> nos permite establecer un 
             <strong>contenedor flexible</strong>. Los hijos del contenedor flexible se llaman <strong>elementos flexibles.</strong></p>
@@ -23,7 +68,7 @@
                     <pre>.contenedor{<br>   <strong class="importante">display: flex;</strong><br>}</pre>
                 </div>
                 <div class="img">
-                    <img src="img/d-f.png" alt="">
+                    <img src="img/d-f.png" alt="" class="img-fluid">
                 </div>
             </div>
         </div>
@@ -40,7 +85,7 @@
                     <pre>.contenedor{<br>   display: flex;<br><strong class="importante">   flex-direction: row;</strong> [VALOR POR DEFECTO]<br>}</pre>
                 </div>
                 <div class="img">
-                    <img src="img/fd-r.png" alt="">
+                    <img src="img/fd-r.png" alt="" class="img-fluid">
                 </div>
             </div>
         </div>
@@ -54,7 +99,7 @@
                     <pre>.contenedor{<br>   display: flex;<br><strong class="importante">   flex-direction: row-reverse;</strong><br>}</pre>
                 </div>
                 <div class="img">
-                    <img src="img/fd-rr.png" alt="">
+                    <img src="img/fd-rr.png" alt="" class="img-fluid">
                 </div>
             </div>
         </div>
@@ -68,7 +113,7 @@
                     <pre>.contenedor{<br>   display: flex;<br><strong class="importante">   flex-direction: column;</strong><br>}</pre>
                 </div>
                 <div class="img">
-                    <img src="img/fd-c.png" alt="">
+                    <img src="img/fd-c.png" alt="" class="img-fluid">
                 </div>
             </div>
         </div>
@@ -82,7 +127,7 @@
                     <pre>.contenedor{<br>   display: flex;<br><strong class="importante">   flex-direction: column-reverse;</strong><br>}</pre>
                 </div>
                 <div class="img">
-                    <img src="img/fd-cr.png" alt="">
+                    <img src="img/fd-cr.png" alt="" class="img-fluid">
                 </div>
             </div>
         </div>
@@ -100,7 +145,7 @@
                     <pre>.contenedor{<br>   display: flex;<br>   flex-direction: row;<br><strong class="importante">  flex-wrap: nowrap;</strong> [VALOR POR DEFECTO]<br>}</pre>
                 </div>
                 <div class="img">
-                    <img src="img/fw-nw.png" alt="">
+                    <img src="img/fw-nw.png" alt="" class="img-fluid">
                 </div>
             </div>
         </div>
@@ -114,7 +159,7 @@
                     <pre>.contenedor{<br>   display: flex;<br>   flex-direction: row;<br><strong class="importante">  flex-wrap: wrap;</strong><br>}</pre>
                 </div>
                 <div class="img">
-                    <img src="img/fw-w.png" alt="">
+                    <img src="img/fw-w.png" alt="" class="img-fluid">
                 </div>
             </div>
         </div>
@@ -128,10 +173,16 @@
                     <pre>.contenedor{<br>   display: flex;<br>   flex-direction: row;<br><strong class="importante">  flex-wrap: wrap-reverse;</strong><br>}</pre>
                 </div>
                 <div class="img">
-                    <img src="img/fw-wr.png" alt="">
+                    <img src="img/fw-wr.png" alt="" class="img-fluid">
                 </div>
             </div>
         </div>
+
+        <h1 class="titulo">RESUMEN: TERMINOS IMPORTANTES</h1>
+        <div class="card">
+            <img src="img/terminos.png" alt="" class="img-fluid">
+        </div>
+
 
         <h1 class="titulo">ALINEAR LINEAS DEL CONTENEDOR FLEXIBLE</h1>
         <p>La propiedad <strong class="importante">align-content</strong> alinea las lineas de un contenedor flexible cuando hay espacio adicional en el eje secundario. 
@@ -146,10 +197,10 @@
                     <pre>.contenedor{<br>   display: flex;<br>   flex-direction: row;<br>   flex-wrap: wrap;<br><strong class="importante">   align-content: flex-start;</strong><br>}</pre>
                 </div>
                 <div class="img">
-                    <img src="img/ac-fs.png" alt="">
+                    <img src="img/ac-fs.png" alt="" class="img-fluid">
                 </div>
             </div>
-            <p><strong>Nota: </strong>Las líneas se colocan a partir del inicio del eje secundario</i></p>
+            <p><strong>Nota: </strong>Las líneas se colocan a partir del <i>lado inicial secundario</i> del contenedor flexible.</i></p>
         </div>
         <div class="card">
             <h3 class="titulo">REGLA CSS</h3>
@@ -161,10 +212,10 @@
                     <pre>.contenedor{<br>   display: flex;<br>   flex-direction: row;<br>   flex-wrap: wrap;<br><strong class="importante">   align-content: flex-end;</strong><br>}</pre>
                 </div>
                 <div class="img">
-                    <img src="img/ac-fe.png" alt="">
+                    <img src="img/ac-fe.png" alt="" class="img-fluid">
                 </div>
             </div>
-            <p><strong>Nota: </strong>Las líneas se colocan a partir del final del eje secundario</i></p>
+            <p><strong>Nota: </strong>Las líneas se colocan a partir del lado final secundario del contenedor flexible.</i></p>
         </div>
         <div class="card">
             <h3 class="titulo">REGLA CSS</h3>
@@ -176,12 +227,11 @@
                     <pre>.contenedor{<br>   display: flex;<br>   flex-direction: row;<br>   flex-wrap: wrap;<br><strong class="importante">   align-content: space-between;</strong><br>}</pre>
                 </div>
                 <div class="img">
-                    <img src="img/ac-sb.png" alt="">
+                    <img src="img/ac-sb.png" alt="" class="img-fluid">
                 </div>
             </div>
-            <p class="nota"><strong>Nota: </strong>Las líneas son distribuidas de manera uniforme en el contenedor flexible. El espaciado se hace de modo que la separación entre cualquier 
-                par de elementos adyacentes sea el mismo. La primera linea se encuentra pegada al borde del contenedor flexible que coincide con el inicio del eje secundario 
-                y la ultima linea se encuentra pegada al borde opuesto del contenedor flexible.</i></p>
+            <p class="nota"><strong>Nota: </strong>Las líneas son distribuidas de manera uniforme en el contenedor flexible con respecto al eje secundario. El espaciado se hace de modo que la separación entre cualquier 
+                par de filas adyacentes sea el mismo. La primera linea se encuentra pegada al lado inicial secundario del contenedor flexible y la ultima linea se encuentra pegada al lado final secundario del contenedor flexible.</i></p>
         </div>
         <div class="card">
             <h3 class="titulo">REGLA CSS</h3>
@@ -193,12 +243,11 @@
                     <pre>.contenedor{<br>   display: flex;<br>   flex-direction: row;<br>   flex-wrap: wrap;<br><strong class="importante">   align-content: center;</strong><br>}</pre>
                 </div>
                 <div class="img">
-                    <img src="img/ac-c.png" alt="">
+                    <img src="img/ac-c.png" alt="" class="img-fluid">
                 </div>
             </div>
-            <p class="nota"><strong>Nota: </strong>Las líneas se colocan al centro del contenedor flexible con respecto al eje secundario. El espacio entre el  borde del 
-                contenedor flexible que coincide con el inicio del eje secundario y la primera línea, y el que hay entre el borde opuesto del contenedor  y la última línea es 
-                el mismo.</i></p>
+            <p class="nota"><strong>Nota: </strong>Las líneas se colocan al centro del contenedor flexible con respecto al eje secundario. El espacio entre el  lado inicial 
+                secundario del contenedor flexible y la primera línea, es el mismo que el espacio que hay entre el lado final secundario del contenedor flexible y la última línea.</i></p>
         </div>
         <div class="card">
             <h3 class="titulo">REGLA CSS</h3>
@@ -210,7 +259,7 @@
                     <pre>.contenedor{<br>   display: flex;<br>   flex-direction: row;<br>   flex-wrap: wrap;<br><strong class="importante">   align-content: space-around;</strong><br>}</pre>
                 </div>
                 <div class="img">
-                    <img src="img/ac-sa.png" alt="">
+                    <img src="img/ac-sa.png" alt="" class="img-fluid">
                 </div>
             </div>
             <p class="nota"><strong>Nota: </strong>Las líneas son distribuidas uniformemente de modo que el espacio entre cualquier par de elementos adyacentes sea el mismo. 
@@ -226,7 +275,7 @@
                     <pre>.contenedor{<br>   display: flex;<br>   flex-direction: row;<br>   flex-wrap: wrap;<br><strong class="importante">   align-content: stretch;</strong><br>}</pre>
                 </div>
                 <div class="img">
-                    <img src="img/ac-s.png" alt="">
+                    <img src="img/ac-s.png" alt="" class="img-fluid">
                 </div>
             </div>
             <p class="nota"><strong>Nota: </strong>Las líneas son estiradas para usar el espacio sobrante</i></p>
@@ -255,10 +304,10 @@
                     <pre>.contenedor{<br>   display: flex;<br>   flex-direction: row;<br>   flex-wrap: wrap;<br>   align-content: flex-start;<br><strong class="importante">  justify-content: flex-start;</strong> [VALOR POR DEFECTO]<br>}</pre>
                 </div>
                 <div class="img">
-                    <img src="img/jc-fs.png" alt="">
+                    <img src="img/jc-fs.png" alt="" class="img-fluid">
                 </div>
             </div>
-            <p><strong>Nota: </strong>Los elementos flexibles se ubican al principio de la linea.</i></p>
+            <p><strong>Nota: </strong>Los elementos flexibles se ubican al <span class="definicion">lado inicial principal de la linea</span>.</i></p>
             <h3 class="titulo">EJEMPLO</h3>
             <div class="flex-container container-background-color fc-jc-1">
                 <div class="flex-item background-color-1  item-width-150 item-height-80" >E 1 </div>
@@ -283,10 +332,10 @@
                     <pre>.contenedor{<br>   display: flex;<br>   flex-direction: row;<br>   flex-wrap: wrap;<br>   align-content: flex-start;<br><strong class="importante">  justify-content: flex-end;</strong><br>}</pre>
                 </div>
                 <div class="img">
-                    <img src="img/jc-fe.png" alt="">
+                    <img src="img/jc-fe.png" alt="" class="img-fluid">
                 </div>
             </div>
-            <p><strong>Nota: </strong><i>Los elementos flexibles se ubican al final de la linea.</i></p>
+            <p><strong>Nota: </strong>Los elementos flexibles se colocan al <span class="definicion">lado final principal de la linea.</span> </p>
             <h3 class="titulo">EJEMPLO</h3>
             <div class="flex-container container-background-color fc-jc-2">
                 <div class="flex-item background-color-1  item-width-150 item-height-80" >E 1 </div>
@@ -311,10 +360,10 @@
                     <pre>.contenedor{<br>   display: flex;<br>   flex-direction: row;<br>   flex-wrap: wrap;<br>   align-content: flex-start;<br><strong class="importante">  justify-content: center;</strong><br>}</pre>
                 </div>
                 <div class="img">
-                    <img src="img/jc-c.png" alt="">
+                    <img src="img/jc-c.png" alt="" class="img-fluid">
                 </div>
             </div>
-            <p><strong>Nota: </strong><i>Los elementos flexibles se ubican al centro de la linea.</i></p>
+            <p><strong>Nota: </strong>Los elementos flexibles se ubican al centro de la linea.</p>
             <h3 class="titulo">EJEMPLO</h3>
             <div class="flex-container container-background-color fc-jc-3">
                 <div class="flex-item background-color-1  item-width-150 item-height-80" >E 1 </div>
@@ -339,10 +388,12 @@
                     <pre>.contenedor{<br>   display: flex;<br>   flex-direction: row;<br>   flex-wrap: wrap;<br>   align-content: flex-start;<br><strong class="importante">  justify-content: space-between;</strong><br>}</pre>
                 </div>
                 <div class="img">
-                    <img src="img/jc-sb.png" alt="">
+                    <img src="img/jc-sb.png" alt="" class="img-fluid">
                 </div>
             </div>
-            <p class="nota"><strong>Nota: </strong><i>Los elementos flexibles se distribuyen uniformemente sobre la línea. El espaciamiento se hace de tal manera que el espacio adyacente entre dos elementos es el mismo. El primer elemento esta pegado al inicio de la linea y el ultimo esta pegado al final de la linea.</i></p>
+            <p class="nota"><strong>Nota: </strong>Los elementos flexibles se distribuyen uniformemente sobre la línea. El espaciamiento se hace de tal manera que el espacio adyacente 
+                entre dos elementos es el mismo. El primer elemento esta pegado al <span class="definicion">lado inicial principal de la linea</span> y el ultimo elemento esta pegado al 
+                <span class="definicion">lado final principal de la linea</span> .</p>
             <h3 class="titulo">EJEMPLO</h3>
             <div class="flex-container container-background-color fc-jc-4">
                 <div class="flex-item background-color-1  item-width-150 item-height-80" >E 1 </div>
@@ -367,11 +418,11 @@
                     <pre>.contenedor{<br>   display: flex;<br>   flex-direction: row;<br>   flex-wrap: wrap;<br>   align-content: flex-start;<br><strong class="importante">  justify-content: space-around;</strong><br>}</pre>
                 </div>
                 <div class="img">
-                    <img src="img/jc-sa.png" alt="">
+                    <img src="img/jc-sa.png" alt="" class="img-fluid">
                 </div>
             </div>
-            <p class="nota"><strong>Nota: </strong><i>Los elementos flexibles se alinean uniformemente de tal manera que el espacio entre dos elementos adyacentes es el mismo. 
-                El espacio anterior al primer elemento y posterior al último elemento equivale a la mitad del espacio entre dos elementos adyacentes.</i></p>
+            <p class="nota"><strong>Nota: </strong>Los elementos flexibles se alinean uniformemente de tal manera que el espacio entre dos elementos adyacentes es el mismo. 
+                El espacio anterior al primer elemento y posterior al último elemento equivale a la mitad del espacio entre dos elementos adyacentes.</p>
             <h3 class="titulo">EJEMPLO</h3>
             <div class="flex-container container-background-color fc-jc-5">
                 <div class="flex-item background-color-1  item-width-150 item-height-80" >E 1 </div>
@@ -401,10 +452,10 @@
                     <pre>.contenedor{<br>   display: flex;<br>   flex-direction: row;<br>   flex-wrap: wrap;<br>   align-content: flex-start;<br>   justify-content: space-around;<br>   <strong class="importante">align-items: flex-start; </strong><br>}</pre>
                 </div>
                 <div class="img">
-                    <img src="img/ai-fs.png" alt="">
+                    <img src="img/ai-fs.png" alt="" class="img-fluid">
                 </div>
-            </div>
-            <p class="nota"><strong>Nota: </strong><i>Los elementos se colocan al inicio de la linea con respecto al eje secundario.</i></p>
+            </div>    
+            <p class="nota"><strong>Nota: </strong>Los elementos flexibles se pegan al <span class="definicion">lado inicial secundario de la linea</span>.</p>
             <h3 class="titulo">EJEMPLO</h3>
             <div class="flex-container container-background-color fc-ai-1">
                 <div class="flex-item item-width-150 background-color-1  item-height-50">E 1</div>
@@ -432,10 +483,10 @@
                     <pre>.contenedor{<br>   display: flex;<br>   flex-direction: row;<br>   flex-wrap: wrap;<br>   align-content: flex-start;<br>   justify-content: space-around;<br>   <strong class="importante">align-items: flex-end; </strong><br>}</pre>
                 </div>
                 <div class="img">
-                    <img src="img/ai-fe.png" alt="">
+                    <img src="img/ai-fe.png" alt="" class="img-fluid">
                 </div>
-            </div>
-            <p class="nota"><strong>Nota: </strong><i>Los elementos se colocan al final de la linea con respecto al eje secundario.</i></p>
+            </div>            
+            <p class="nota"><strong>Nota: </strong>Los elementos flexibles se pegan al <span class="definicion">lado final secundario de la linea</span> .</p>
             <h3 class="titulo">EJEMPLO</h3>
             <div class="flex-container container-background-color fc-ai-2">
                 <div class="flex-item item-width-150 background-color-1  item-height-50">E 1</div>
@@ -463,10 +514,10 @@
                     <pre>.contenedor{<br>   display: flex;<br>   flex-direction: row;<br>   flex-wrap: wrap;<br>   align-content: flex-start;<br>   justify-content: space-around;<br>   <strong class="importante">align-items: center; </strong><br>}</pre>
                 </div>
                 <div class="img">
-                    <img src="img/ai-c.png" alt="">
+                    <img src="img/ai-c.png" alt="" class="img-fluid">
                 </div>
             </div>
-            <p class="nota"><strong>Nota: </strong><i>Los elementos estan centrados en la linea con respecto al eje secundario.</i></p>
+            <p class="nota"><strong>Nota: </strong>Los elementos estan centrados en la linea con respecto al eje secundario.</p>
             <h3 class="titulo">EJEMPLO</h3>
             <div class="flex-container container-background-color fc-ai-3">
                 <div class="flex-item item-width-150 background-color-1  item-height-50">E 1</div>
@@ -494,12 +545,12 @@
                     <pre>.contenedor{<br>   display: flex;<br>   flex-direction: row;<br>   flex-wrap: wrap;<br>   align-content: flex-start;<br>   justify-content: space-around;<br>   <strong class="importante">align-items: stretch; </strong> [VALOR POR DEFECTO]<br>}</pre>
                 </div>
                 <div class="img">
-                    <img src="img/ai-s.png" alt="">
+                    <img src="img/ai-s.png" alt="" class="img-fluid">
                 </div>
             </div>
 
 
-            <p class="nota"><strong>Nota: </strong><i>Los elementos flexibles son estirados hasta llenar la linea</i></p>
+            <p class="nota"><strong>Nota: </strong>Los elementos flexibles son estirados hasta llenar la linea.</p>
             <h3 class="titulo">EJEMPLO</h3>
             <div class="flex-container container-background-color fc-ai-4">
                 <div class="flex-item item-width-150 background-color-1  item-height-50">E 1</div>
@@ -519,5 +570,7 @@
         </div>
        
     </div>
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
 </body>
 </html>
