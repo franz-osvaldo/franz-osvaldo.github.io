@@ -69,6 +69,9 @@ body{
 .item-width-130{padding-left: 65px; padding-right: 65px;}
 .item-width-140{padding-left: 70px; padding-right: 70px;}
 .item-width-150{padding-left: 75px; padding-right: 75px;}
+
+
+.item-width-500{padding-left: 250px; padding-right: 250px;}
 /*************************************************************************************************************/
 /* ALTURA DEL CONTENEDOR */
 .container-height-350{height: 350px;}
@@ -161,3 +164,228 @@ body{
     justify-content: flex-start;
     align-items: stretch;
 }
+
+/*************************************************************************************************************/
+/********************************************************************************************* ORDER *********/
+.fc-o-1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: stretch;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+.fc-o-1 .flex-item-1{ order: -3;}
+.fc-o-1 .flex-item-2{ order:  0;}
+.fc-o-1 .flex-item-3{ order: -5;}
+.fc-o-1 .flex-item-4{ order: -2;}
+.fc-o-1 .flex-item-5{ order: -4;}
+.fc-o-1 .flex-item-6{ order: -1;}
+
+/***************************************************************************************** FLEX-BASIS ********/
+.fc-fb-1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: stretch;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+.fc-fb-1 .flex-item-1{
+    flex-basis: 100px;
+}
+.fc-fb-1 .flex-item-2{
+    flex-basis: 200px;
+}
+.fc-fb-1 .flex-item-3{
+    flex-basis: 100px;
+}
+/***************************************************************************************** FLEX-GROW *********/
+.fc-fg-1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: stretch;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+.fc-fg-1 .flex-item-1{ flex-basis: 150px; }
+.fc-fg-1 .flex-item-2{ flex-basis: 150px; }
+.fc-fg-1 .flex-item-3{ flex-basis: 150px; }
+
+.fc-fg-2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: stretch;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+.fc-fg-2 .flex-item-1{
+    flex-basis: 150px;
+    flex-grow: 1;
+}
+.fc-fg-2 .flex-item-2{
+    flex-basis: 150px;
+    flex-grow: 2;
+}
+.fc-fg-2 .flex-item-3{
+    flex-basis: 150px;
+    flex-grow: 1;
+}
+/***************************************************************************************** FLEX-SHRINK *********/
+.fc-fs-1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: stretch;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+.fc-fs-1 .flex-item-1{flex-basis: 600px; flex-shrink: 0;}
+.fc-fs-1 .flex-item-2{flex-basis: 600px; flex-shrink: 0;}
+.fc-fs-1 .flex-item-3{flex-basis: 600px; flex-shrink: 0;}
+
+
+.fc-fs-2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: stretch;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+.fc-fs-2 .flex-item-1{
+    flex-basis: 600px;
+    flex-shrink: 2;
+}
+.fc-fs-2 .flex-item-2{
+    flex-basis: 600px;
+    flex-shrink: 1;
+}
+.fc-fs-2 .flex-item-3{
+    flex-basis: 600px;
+    flex-shrink: 2;
+}
+
+/***************************************************************************************** FLEX ****************/
+
+.fc-f-1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: stretch;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+.fc-f-1 .flex-item-1{
+    flex: 2 1 150px;
+}
+.fc-f-1 .flex-item-2{
+    flex: 1 1 150px;
+}
+.fc-f-1 .flex-item-3{
+    flex: 1 1 150px;
+}
+.fc-f-1 .flex-item-4{
+    flex: 2 1 150px;
+}
+/***************************************************************************************** ALIGN SELF **********/
+.fc-as-1{
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: stretch;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.fc-as-1 .flex-item-1{    
+    flex: 0 1 250px;
+}
+.fc-as-1 .flex-item-2{    
+    flex: 0 1 250px;
+}
+.fc-as-1 .flex-item-3{    
+    flex: 0 1 250px;
+}
+
+
+.fc-as-2{
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: stretch;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.fc-as-2 .flex-item-1{    
+    flex: 0 1 250px;
+}
+.fc-as-2 .flex-item-2{    
+    flex: 0 1 250px;
+}
+.fc-as-2 .flex-item-3{    
+    flex: 0 1 250px;
+    align-self: flex-end;
+}
+
+
+
+
+/* *****************************************************************TEST */
+.fc-o-1xxx{
+    display: flex;
+}
+
+
+.fc-o-1xxx .flex-item-1{
+    /* width: 350px; */
+    height: 25PX;
+    /* flex-basis: 350px; */
+    
+    /* flex-basis: auto; */
+    /* flex-grow: 0;
+    flex-shrink: 1; */
+    flex-basis: 350px;
+
+    flex-shrink: 2;
+}
+
+.fc-o-1xxx .flex-item-2{
+    /* width: 450px; */
+    height: 25PX;
+    /* flex-basis: 450px;  */
+    /* flex-basis: auto; */
+    
+    /* flex-grow: 0;
+    flex-shrink: 1; */
+    flex-basis: 450px;
+    
+    flex-shrink: 3;
+}
+
+.fc-o-1xxx .flex-item-3{
+    width: 400px;
+    height: 25PX;
+    /* flex-basis: 400px; */
+    /* flex-basis: auto; */
+    
+    /* flex-grow: 0;
+    flex-shrink: 1; */
+  
+    flex-shrink: 1;
+}
+
+/*************************************************************************************************************** ESTABLECER EL TAMANO */
+/*
+ La propiedad de flex-basis define el tamaño del elemento flexible a lo largo del eje principal del contenedor flexible 
+ valores posibles:
+ Puede ser una longitud (por ejemplo, 20%, 5rem, etc.) o una palabra clave.
+ La palabra clave auto significa "mira mi propiedad width o height"  ---> CONTENIDO
+
+ La palabra clave content significa "dimensionarlo según el contenido del elemento"
+
+*/

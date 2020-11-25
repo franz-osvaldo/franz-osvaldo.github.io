@@ -568,7 +568,248 @@
                 <div class="flex-item item-width-150 background-color-13 item-height-90">E 13</div>
             </div>
         </div>
+
+
+        <h1 class="titulo">ELEMENTOS FLEXIBLES</h1>
+        <h2 class="titulo">MODIFICAR EL ORDEN DE LOS ELEMENTOS FLEXIBLES</h2>
+        <p>Los elementos flexibles se disponen de forma predeterminada en el mismo orden en que aparecen en el documento de origen. La propiedad 
+            <strong class="importante">order</strong> se puede utilizar para cambiar este orden.</p>
        
+        <div class="card">
+            <h3 class="titulo">REGLA CSS</h3>
+            <div class="resumen">
+                <div class="html">
+                    <pre>&lt;div class="contenedor"&gt;<br>   &lt;div class="flex-item-1"&gt;E1&lt;/div&gt;<br>   &lt;div class="flex-item-2"&gt;E2&lt;/div&gt;<br>   &lt;div class="flex-item-3"&gt;E3&lt;/div&gt;<br>   &lt;div class="flex-item-4"&gt;E4&lt;/div&gt;<br>   &lt;div class="flex-item-5"&gt;E5&lt;/div&gt;<br>&lt;/div&gt;</pre>
+                </div>
+                <div class="css">
+                    <pre>.contenedor{<br>   display: flex;<br>   flex-direction: row;<br>   flex-wrap: nowrap;<br>   align-content: stretch;<br>   justify-content: flex-start;<br>   align-items: stretch;<br>}</pre>
+                    <pre>.flex-item-1 { <strong class="importante">order: -3;</strong> }</pre>
+                    <pre>.flex-item-2 { <strong class="importante">order:  0;</strong> }</pre>
+                    <pre>.flex-item-3 { <strong class="importante">order: -5;</strong> }</pre>
+                    <pre>.flex-item-4 { <strong class="importante">order: -2;</strong> }</pre>
+                    <pre>.flex-item-5 { <strong class="importante">order: -4;</strong> }</pre>
+                    <pre>.flex-item-6 { <strong class="importante">order: -1;</strong> }</pre>
+                </div>
+                <div class="img">
+                    <img src="img/o-n.png" alt="" class="img-fluid">
+                </div>
+            </div>
+
+
+            <p class="nota"><strong>Nota: </strong>Inicialmente cada elemento flexible tiene asociado un numero <strong class="importante">order</strong> igual a cero (0). 
+                El numero <strong class="importante">order</strong> de un elemento flexible puede modificarse usando la propiedad <strong class="importante">order. </strong>
+                Los elementos se acomodan empezando por el que tiene el numero <stong class="importante">order</stong> mas bajo. Los elementos con el mismo 
+                <strong class="importante">order</strong> se presentan en el orden en que aparecen en el documento de origen.</p>
+            <h3 class="titulo">EJEMPLO</h3>
+            <div class="flex-container container-background-color fc-o-1">
+                <div class="flex-item-1 item-width-150 background-color-1  item-height-50">E 1</div>
+                <div class="flex-item-2 item-width-150 background-color-2  item-height-100">E 2</div>
+                <div class="flex-item-3 item-width-150 background-color-3  item-height-60">E 3</div>
+                <div class="flex-item-4 item-width-150 background-color-4  item-height-70">E 4</div>
+                <div class="flex-item-5 item-width-150 background-color-5  item-height-50">E 5</div>
+                <div class="flex-item-6 item-width-150 background-color-6  item-height-90">E 6</div>                    
+            </div>
+        </div>
+
+        <!---------------------------------------------------------------------------------------------------------------------------------------->
+        <!------------------------------------------------------------------------------------------------------------------------------ INICIO -->
+        <!---------------------------------------------------------------------------------------------------------------------------------------->
+        <h2 class="titulo">TAMAÑO INICIAL</h2>
+        <p> La propiedad <strong class="importante">flex-basis</strong> permite definir el tamaño de un elemento flexible a lo largo del eje principal del contenedor flexible.</p>
+       
+        <div class="card">
+            <h3 class="titulo">REGLA CSS</h3>
+            <div class="resumen">
+                <div class="html">
+                    <pre>&lt;div class="contenedor"&gt;<br>   &lt;div class="flex-item-1"&gt;E1&lt;/div&gt;<br>   &lt;div class="flex-item-2"&gt;E2&lt;/div&gt;<br>   &lt;div class="flex-item-3"&gt;E3&lt;/div&gt;<br>&lt;/div&gt;</pre>
+                </div>
+                <div class="css">
+                    <pre>.contenedor{<br>   display: flex;<br>   flex-direction: row;<br>   flex-wrap: nowrap;<br>   align-content: stretch;<br>   justify-content: flex-start;<br>   align-items: stretch;<br>}</pre>
+                    <pre>.flex-item-1 { <strong class="importante">flex-basis: 100px;</strong> }</pre>
+                    <pre>.flex-item-2 { <strong class="importante">flex-basis: 200px;</strong> }</pre>
+                    <pre>.flex-item-3 { <strong class="importante">flex-basis: 100px;</strong> }</pre>                    
+                </div>
+                <div class="img">
+                    <img src="img/fb-100.png" alt="" class="img-fluid">
+                </div>
+            </div>
+
+
+            <p class="nota"><strong>Nota: </strong>.</p>
+            <h3 class="titulo">EJEMPLO</h3>
+            <div class="flex-container container-background-color fc-fb-1">
+                <div class="flex-item-1 background-color-1  item-height-100">E 1</div>
+                <div class="flex-item-2 background-color-2  item-height-100">E 2</div>
+                <div class="flex-item-3 background-color-3  item-height-100">E 3</div>
+            </div>
+        </div>
+
+        <h2 class="titulo">FACTOR DE CRECIMIENTO</h2>
+        <p> La propiedad <strong class="importante">flex-grow</strong> especifica el factor de crecimiento de un elemento flexible, en su dirección principal. El 
+            factor de crecimiento determina cuánto crecerá el elemento flexible, en relación con el resto de elementos flexibles en el contenedor flexible cuando 
+            se distribuya el espacio libre del contenedor (El espacio libre es el tamaño del contenedor flexible menos el tamaño de todos los elementos flexibles juntos).</p>
+       
+        <div class="card">
+            <h3 class="titulo">REGLA CSS</h3>
+            <div class="resumen">
+                <div class="html">
+                    <pre>&lt;div class="contenedor"&gt;<br>   &lt;div class="flex-item-1"&gt;E1&lt;/div&gt;<br>   &lt;div class="flex-item-2"&gt;E2&lt;/div&gt;<br>   &lt;div class="flex-item-3"&gt;E3&lt;/div&gt;<br>&lt;/div&gt;</pre>
+                </div>
+                <div class="css">
+                    <pre>.contenedor{<br>   display: flex;<br>   flex-direction: row;<br>   flex-wrap: nowrap;<br>   align-content: stretch;<br>   justify-content: flex-start;<br>   align-items: stretch;<br>}</pre>
+                    <pre>.flex-item-1 {<br>   flex-basis: 150px;<br>   <strong class="importante">flex-grow: 1;</strong><br>}</pre>                    
+                    <pre>.flex-item-1 {<br>   flex-basis: 150px;<br>   <strong class="importante">flex-grow: 2;</strong><br>}</pre>                    
+                    <pre>.flex-item-1 {<br>   flex-basis: 150px;<br>   <strong class="importante">flex-grow: 1;</strong><br>}</pre>                    
+                </div>
+                <div class="img">
+                    <img src="img/fg-n.png" alt="" class="img-fluid">
+                </div>
+            </div>
+
+
+            <p class="nota"><strong>Nota: </strong> Si todos los elementos tienen <strong class="importante">flex-grow</strong> establecido en 1, el espacio restante en el contenedor se distribuirá por igual 
+                a todos los elementos flexibles. Si uno de los elementos flexibles tiene un valor de 2, este ocuparía el doble del espacio restante que los demás. Notar que 
+                cuando se omite, el valor por defecto es cero (0).</p>
+            <h2 class="titulo">EJEMPLO</h2>
+            <h3 class="titulo">CONFIGURACIÓN INICIAL</h3>
+            <div class="flex-container container-background-color fc-fg-1">
+                <div class="flex-item-1 background-color-1  item-height-100">E 1</div>
+                <div class="flex-item-2 background-color-2  item-height-100">E 2</div>
+                <div class="flex-item-3 background-color-3  item-height-100">E 3</div>
+            </div>
+            <h3 class="titulo">CONFIGURACIÓN DESEADA</h3>
+            <div class="flex-container container-background-color fc-fg-2">
+                <div class="flex-item-1  background-color-1  item-height-100">E 1</div>
+                <div class="flex-item-2  background-color-2  item-height-100">E 2</div>
+                <div class="flex-item-3  background-color-3  item-height-100">E 3</div>
+            </div>
+        </div>
+
+
+
+        <h2 class="titulo">FACTOR DE CONTRACCION</h2>
+        <p>La propiedad <strong class="importante">flex-shrink</strong> especifica el factor de contracción de un elemento flexible. Los elementos flexibles se encogerán 
+            para llenar el contenedor de acuerdo a su número flex-shrink, cuando el tamaño de los elementos flexibles sea mayor al del contenedor flexible.</p>
+       
+        <div class="card">
+            <h3 class="titulo">REGLA CSS</h3>
+            <div class="resumen">
+                <div class="html">
+                    <pre>&lt;div class="contenedor"&gt;<br>   &lt;div class="flex-item-1"&gt;E1&lt;/div&gt;<br>   &lt;div class="flex-item-2"&gt;E2&lt;/div&gt;<br>   &lt;div class="flex-item-3"&gt;E3&lt;/div&gt;<br>&lt;/div&gt;</pre>
+                </div>
+                <div class="css">
+                    <pre>.contenedor{<br>   display: flex;<br>   flex-direction: row;<br>   flex-wrap: nowrap;<br>   align-content: stretch;<br>   justify-content: flex-start;<br>   align-items: stretch;<br>}</pre>
+                    <pre>.flex-item-1 {<br>   flex-basis: 600px; <br>   <strong class="importante">flex-shrink: 2;</strong><br> }</pre>
+                    <pre>.flex-item-2 {<br>   flex-basis: 600px; <br>   <strong class="importante">flex-shrink: 1;</strong> [Valor por defecto]<br> }</pre>
+                    <pre>.flex-item-3 {<br>   flex-basis: 600px; <br>   <strong class="importante">flex-shrink: 2;</strong><br> }</pre>
+                </div>
+                <div class="img">
+                    <img src="img/fs-1.png" alt="" class="img-fluid">
+                </div>
+            </div>
+
+            <p class="nota"><strong>Nota: </strong>.</p>
+            <h3 class="titulo">EJEMPLO</h3>
+            <div class="flex-container container-background-color fc-fs-2">
+                <div class="flex-item-1 background-color-4  item-height-100">E 1</div>
+                <div class="flex-item-2 background-color-5  item-height-100">E 2</div>
+                <div class="flex-item-3 background-color-6  item-height-100">E 3</div>
+            </div>
+        </div>
+
+
+        <h2 class="titulo">SHORTHAND</h2>
+        <p>La propiedad <strong class="importante">flex</strong> ..</p>
+       
+        <div class="card">
+            <h3 class="titulo">REGLA CSS</h3>
+            <div class="resumen">
+                <div class="html">
+                    <pre>&lt;div class="contenedor"&gt;<br>   &lt;div class="flex-item-1"&gt;E1&lt;/div&gt;<br>   &lt;div class="flex-item-2"&gt;E2&lt;/div&gt;<br>   &lt;div class="flex-item-3"&gt;E3&lt;/div&gt;<br>&lt;/div&gt;</pre>
+                </div>
+                <div class="css">
+                    <pre>.contenedor{<br>   display: flex;<br>   flex-direction: row;<br>   flex-wrap: nowrap;<br>   align-content: stretch;<br>   justify-content: flex-start;<br>   align-items: stretch;<br>}</pre>
+                    <pre>.flex-item-1 { <strong class="importante">flex: 2 1 150px;</strong> }</pre>
+                    <pre>.flex-item-2 { <strong class="importante">flex: 3 1 150px;</strong> }</pre>
+                    <pre>.flex-item-3 { <strong class="importante">flex: 2 1 150px;</strong> }</pre>
+                </div>
+                <div class="img">
+                    <img src="img/f-123.png" alt="" class="img-fluid">
+                </div>
+            </div>
+
+
+            <p class="nota"><strong>Nota: </strong>.</p>
+            <h3 class="titulo">EJEMPLO</h3>
+            <div class="flex-container container-background-color fc-f-1">
+                <div class="flex-item-1 background-color-1  item-height-50">E 1</div>
+                <div class="flex-item-2 background-color-2  item-height-100">E 2</div>
+                <div class="flex-item-3 background-color-3  item-height-60">E 3</div>
+                <div class="flex-item-4 background-color-4  item-height-70">E 4</div>                
+            </div>
+        </div>
+
+
+
+        <h2 class="titulo">ALINEAR ELEMENTOS FLEXIBLES A LO LARGO DEL EJE SECUNDARIO</h2>
+        <p>La propiedad <strong class="importante">align-self</strong> permite que cada elemento flexible se puede alinear con respecto al eje secundario de la línea actual 
+            del contenedor flexible.</p>
+            <ul>
+                Valores posibles:    
+                <li><strong class="importante">auto</strong> [Valor por defecto]. Se deja la responsabilidad de alineación al contenedor flexible.</li>
+                <li><strong class="importante">flex-start</strong></li>
+                <li><strong class="importante">flex-end</strong></li>
+                <li><strong class="importante">center</strong></li>
+                <li><strong class="importante">stretch</strong></li>
+            </ul>
+       
+        <div class="card">
+            <h3 class="titulo">REGLA CSS</h3>
+            <div class="resumen">
+                <div class="html">
+                    <pre>&lt;div class="contenedor"&gt;<br>   &lt;div class="flex-item-1"&gt;E1&lt;/div&gt;<br>   &lt;div class="flex-item-2"&gt;E2&lt;/div&gt;<br>   &lt;div class="flex-item-3"&gt;E3&lt;/div&gt;<br>&lt;/div&gt;</pre>
+                </div>
+                <div class="css">
+                    <pre>.contenedor{<br>   display: flex;<br>   flex-direction: row;<br>   flex-wrap: nowrap;<br>   align-content: stretch;<br>   justify-content: flex-start;<br>   align-items: flex-start;<br>}</pre>
+                    <pre>.flex-item-1 {<br>   flex: 0 1 250px;<br>}</pre>
+                    <pre>.flex-item-2 {<br>   flex: 0 1 250px;<br>}</pre>
+                    <pre>.flex-item-3 {<br>   flex: 0 1 250px;<br>   <strong class="importante">align-self: flex-end;</strong><br>}</pre>
+                </div>
+                <div class="img">
+                    <img src="img/as-fe.png" alt="" class="img-fluid">
+                </div>
+            </div>
+
+
+            
+            <h3 class="titulo">EJEMPLO</h3>
+            <h4 class="titulo">CONFIGURACIÓN INICIAL</h4> 
+            <div class="flex-container container-background-color fc-as-1">
+                <div class="flex-item-1 background-color-1  item-height-50">E1</div>
+                <div class="flex-item-2 background-color-2  item-height-100">E2</div>
+                <div class="flex-item-3 background-color-3  item-height-60">E3</div>
+            </div>
+
+            
+            <h4 class="titulo">CONFIGURACIÓN DESEADA</h4>
+            <div class="flex-container container-background-color fc-as-2">
+                <div class="flex-item-1 background-color-1  item-height-50">E1</div>
+                <div class="flex-item-2 background-color-2  item-height-100">E2</div>
+                <div class="flex-item-3 background-color-3  item-height-60">E3</div>
+            </div>
+
+        </div>
+
+        <h2 class="titulo">EJERCICIO</h2>
+        <div class="card">
+            <img src="img/ejercicio1.png" alt="">
+        </div>
+
+        <!---------------------------------------------------------------------------------------------------------------------------------------->
+        <!---------------------------------------------------------------------------------------------------------------------------------------->
+        <!---------------------------------------------------------------------------------------------------------------------------------------->
+
+
     </div>
     <script src="js/jquery-3.5.1.js"></script>
     <script src="js/bootstrap.bundle.js"></script>
