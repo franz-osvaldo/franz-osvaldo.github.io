@@ -616,7 +616,12 @@
         <!---------------------------------------------------------------------------------------------------------------------------------------->
         <h2 class="titulo">TAMAÑO INICIAL</h2>
         <p> La propiedad <strong class="importante">flex-basis</strong> permite definir el tamaño de un elemento flexible a lo largo del eje principal del contenedor flexible.</p>
-       
+        <span><strong>Valores posibles:</strong></span>
+        <ul>            
+            <li><strong class="importante">auto</strong> [Valor por defecto]. Significa "observa mi propiedad width o height".</li>
+            <li><strong class="importante">content</strong>. La palabra clave content significa "dimensionarlo según el contenido del elemento".</li>
+            <li>Una longitud (20%, 5rem, etc.)(</li>
+        </ul>
         <div class="card">
             <h3 class="titulo">REGLA CSS</h3>
             <div class="resumen">
@@ -719,8 +724,14 @@
 
 
         <h2 class="titulo">SHORTHAND</h2>
-        <p>La propiedad <strong class="importante">flex</strong> ..</p>
+        <p>La propiedad <strong class="importante">flex</strong> especifica los factores flex (flex-grow y flex-shrink) y flex-basis.</p>
        
+        <span><strong>Valores posibles:</strong></span>
+        <ul>            
+            <li><strong class="importante">0 1 auto</strong> [Valor por defecto].</li>
+            <li><strong class="importante">flex-grow   flex-shrink   flex-basis</strong></li>
+        </ul>
+
         <div class="card">
             <h3 class="titulo">REGLA CSS</h3>
             <div class="resumen">
@@ -754,14 +765,14 @@
         <h2 class="titulo">ALINEAR ELEMENTOS FLEXIBLES A LO LARGO DEL EJE SECUNDARIO</h2>
         <p>La propiedad <strong class="importante">align-self</strong> permite que cada elemento flexible se puede alinear con respecto al eje secundario de la línea actual 
             del contenedor flexible.</p>
-            <ul>
-                Valores posibles:    
-                <li><strong class="importante">auto</strong> [Valor por defecto]. Se deja la responsabilidad de alineación al contenedor flexible.</li>
-                <li><strong class="importante">flex-start</strong></li>
-                <li><strong class="importante">flex-end</strong></li>
-                <li><strong class="importante">center</strong></li>
-                <li><strong class="importante">stretch</strong></li>
-            </ul>
+        <span><strong>Valores posibles:</strong></span>
+        <ul>            
+            <li><strong class="importante">auto</strong> [Valor por defecto]. Se deja la responsabilidad de alineación al contenedor flexible.</li>
+            <li><strong class="importante">flex-start</strong></li>
+            <li><strong class="importante">flex-end</strong></li>
+            <li><strong class="importante">center</strong></li>
+            <li><strong class="importante">stretch</strong></li>
+        </ul>
        
         <div class="card">
             <h3 class="titulo">REGLA CSS</h3>
